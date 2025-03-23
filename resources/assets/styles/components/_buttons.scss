@@ -1,0 +1,93 @@
+.btn {
+  font-size: 0.875rem;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-weight: 400;
+
+  @include media-breakpoint-up(4xl) {
+    font-size: 0.875rem;
+    padding: 14px 28px;
+  }
+
+  .arrow {
+    margin-left: 20px;
+    will-change: transform, filter;
+    transition: transform 0.3s, filter 0.3s;
+
+    @include media-breakpoint-up(4xl) {
+      margin-left: 40px;
+    }
+  }
+
+  &-primary {
+    &:hover {
+      background-color: #be9661;
+      border-color: #be9661;
+    }
+  }
+
+  &-secondary {
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &-white {
+    background-color: $white;
+    border-color: $white;
+    color: #222;
+
+    &:hover {
+      background-color: #be9661;
+      border-color: #be9661;
+      color: $white;
+    }
+  }
+
+  &-outline {
+    border: 1px solid $primary;
+    color: $primary;
+
+    &:hover {
+      background-color: #be9661;
+      border-color: #be9661 !important;
+      color: $white !important;
+    }
+  }
+
+  &-search {
+    padding: 0;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #dedede;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: transparent;
+
+    .icon {
+      height: 36px;
+      width: auto;
+    }
+  }
+
+  &-select {
+    min-width: 200px;
+    padding-right: 35px;
+    border-radius: 8px;
+    border: 1px solid #dedede;
+    text-align: left;
+
+    &:focus {
+      border-color: #dedede;
+    }
+  }
+
+  &:hover {
+    .arrow {
+      transform: translateX(5px);
+      filter: brightness(0) invert(1);
+    }
+  }
+}

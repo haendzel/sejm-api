@@ -1,0 +1,134 @@
+.hero {
+  position: relative;
+  z-index: 0;
+  margin: 40px 0 0 0;
+  padding: 40px 0;
+
+  @include media-breakpoint-up(lg) {
+    margin: 60px 0;
+    padding: 60px 0;
+  }
+
+  @include media-breakpoint-up(4xl) {
+    margin: 80px 0;
+    padding: 80px;
+  }
+
+  &-home {
+    background-repeat: no-repeat;
+    background-position: top 50% right 0;
+  }
+
+  &__video-wrapper {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    z-index: -1;
+    background-color: $dark;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0.7;
+    }
+  }
+
+  &__subtitle {
+    color: $secondary;
+    letter-spacing: 0.35px;
+    margin-bottom: 24px;
+    font-size: 0.875rem !important;
+    font-weight: 400;
+  }
+
+  &__title {
+    color: $dark;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 36px;
+  }
+
+  &__text {
+    color: $dark;
+    font-size: 1.25rem !important;
+  }
+
+  .box {
+    &__btn {
+      color: $primary;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      color: $primary;
+      margin-bottom: 8px;
+      font-size: 0.875rem;
+    }
+
+    &__title {
+      @include media-breakpoint-up(2xl) {
+        font-size: 1.75rem;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      right: 20px;
+      bottom: 35px;
+      will-change: transform;
+      transition: transform 0.5s;
+    }
+
+    &__image {
+      transform-origin: bottom center;
+      will-change: transform;
+      transition: transform 0.5s;
+    }
+
+    &__item {
+      position: relative;
+      margin-bottom: 35px;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 0 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+        background-color: $primary;
+
+        .box {
+          &__btn {
+            border-color: $white;
+            color: $white;
+          }
+
+          &__subtitle {
+            color: $white;
+          }
+
+          &__title {
+            color: $white;
+          }
+        }
+      }
+
+      &:hover {
+        .box {
+          &__image {
+            transform: scale(1.05);
+          }
+
+          &__icon {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}

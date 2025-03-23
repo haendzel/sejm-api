@@ -1,0 +1,33 @@
+.stand-out-lay2 {
+  margin: 160px 0;
+
+  &__photo-wrapper {
+    background-color: #f4f5f5;
+    border-radius: 15px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  &__content {
+    h4 {
+      font-weight: 300;
+      margin-bottom: 24px;
+
+      @include media-breakpoint-up(2xl) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__cta {
+    margin-top: 60px;
+    padding-left: 40px;
+    border-left: 1px solid $secondary;
+  }
+}

@@ -1,0 +1,108 @@
+// Note: Bootstrap 5 ships with its own default theme colors
+
+$primary: #202d35;
+$secondary: #EE2723;
+$light-gray: #f7f7f7;
+$light: #f2f2f4;
+$dark: #1e1f21;
+$gray: #808080;
+$gray2: #d0d0d0;
+$gray3: #afafaf;
+$dark-gray: #2a2b2e;
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $primary,
+  info: $primary,
+  warning: $primary,
+  danger: $primary,
+  light: $light-gray,
+  dark: $dark,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  2xs: 360px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  2xl: 1400px,
+  3xl: 1500px,
+  4xl: 1800px,
+  5xl: 1920px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  2xl: 1260px,
+);
+
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.625,
+  7: $spacer * 8.75,
+  8: $spacer * 10,
+  9: $spacer * 20,
+);
+
+$enable-negative-margins: true;
+
+$grid-gutter-width: 2.5rem;
+
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$input-btn-padding-y: 9.5px;
+$form-floating-padding-y: 17px;
+$form-floating-height: 60px;
+$input-btn-padding-x: 20px;
+$input-btn-font-size: 0.875rem;
+$input-font-size: 1rem;
+$form-label-font-size: 1rem;
+$input-focus-bg: $light-gray;
+$input-bg: $light-gray;
+$input-focus-border-color: $light-gray;
+$input-border-radius: 0;
+$input-btn-focus-color: none;
+$input-btn-focus-box-shadow: none;
+$input-border-color: $light-gray;
+$form-select-font-size: 1rem;
+$form-select-border-radius: 0;
+
+$tooltip-color: $primary;
+$tooltip-bg: #fff;
+$tooltip-padding-y: 10px;
+$tooltip-padding-x: 15px;
+
+$accordion-color: $dark;
+$accordion-bg: transparent;
+$accordion-button-bg: transparent;
+$accordion-button-active-bg: transparent;
+$accordion-button-padding-y: 40px;
+$accordion-padding-x: 48px;
+$accordion-icon-width: 22px;
+$accordion-border-color: transparent;
+$accordion-button-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.797' height='31.797' viewBox='0 0 31.797 31.797'%3E%3Cg id='Group_40848' data-name='Group 40848' transform='translate(1247.788 -3246.072) rotate(45)'%3E%3Cline id='Line_8465' data-name='Line 8465' x2='26.245' transform='translate(1415 3177.64)' fill='none' stroke='%23be9661' stroke-linecap='square' stroke-width='2'/%3E%3Cline id='Line_8466' data-name='Line 8466' x2='12.351' y2='12.351' transform='translate(1430.438 3165.289)' fill='none' stroke='%23be9661' stroke-linecap='square' stroke-width='2'/%3E%3Cline id='Line_8467' data-name='Line 8467' y1='12.351' x2='12.351' transform='translate(1430.438 3177.64)' fill='none' stroke='%23be9661' stroke-linecap='square' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+$accordion-button-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.797' height='31.797' viewBox='0 0 31.797 31.797'%3E%3Cg id='Group_40848' data-name='Group 40848' transform='translate(1247.788 -3246.072) rotate(45)'%3E%3Cline id='Line_8465' data-name='Line 8465' x2='26.245' transform='translate(1415 3177.64)' fill='none' stroke='%23be9661' stroke-linecap='square' stroke-width='2'/%3E%3Cline id='Line_8466' data-name='Line 8466' x2='12.351' y2='12.351' transform='translate(1430.438 3165.289)' fill='none' stroke='%23be9661' stroke-linecap='square' stroke-width='2'/%3E%3Cline id='Line_8467' data-name='Line 8467' y1='12.351' x2='12.351' transform='translate(1430.438 3177.64)' fill='none' stroke='%23be9661' stroke-linecap='square' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+
+$table-hover-bg: #f5f5f5;
+$table-striped-bg: rgba(#eff4f3, 0.5);
+$table-border-color: #d3dddd;
+
+@mixin full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

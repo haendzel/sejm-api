@@ -1,0 +1,41 @@
+.box {
+  border-radius: 20px;
+  padding: 40px;
+
+  &-outline {
+    font-family: "Roboto", sans-serif;
+    border: 1px solid $gray2;
+    font-size: 1.125rem;
+    color: $primary;
+
+    &__bold {
+      border: 2px solid $gray2;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      font-family: "Telegraf", sans-serif;
+      font-weight: 400;
+    }
+  }
+
+  &-secondary {
+    background-color: $secondary;
+    color: white;
+    padding: 60px 40px;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 66px 80px 48px 80px;
+    }
+
+    .box-text {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+
+    .box-detail {
+      font-size: 1.125rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.content-links {
+  margin: 50px 0;
+
+  &__btn {
+    margin: 6px;
+
+    .arrow {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__title {
+    color: #222;
+    line-height: 1.5;
+  }
+}

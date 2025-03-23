@@ -1,0 +1,146 @@
+/** Search form */
+// .search-form {
+//   @extend .form-inline;
+// }
+
+// .search-form label {
+//   @extend .form-group;
+
+//   font-weight: normal;
+// }
+
+// .search-form .search-field {
+//   @extend .form-control;
+// }
+
+// .search-form .search-submit {
+//   @extend .btn;
+//   @extend .btn-secondary;
+// }
+
+.wpcf7-response-output {
+  background-color: transparent;
+  color: $gray2 !important;
+  margin: 1.25rem 0 !important;
+  font-size: 1rem !important;
+  border-radius: 5px;
+}
+
+.wpcf7 {
+  &-spinner {
+    position: absolute;
+  }
+  &-form {
+    width: 100%;
+    label {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 2.4px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $light;
+
+      input,
+      textarea {
+        margin: 1rem 0;
+        border: 1px solid $gray2;
+        border-radius: 3px;
+        border-color: $gray2;
+        background-color: transparent;
+        padding: 18px 20px;
+        color: $light;
+        font-size: 1rem;
+        width: 100%;
+        outline: none;
+
+        &::placeholder {
+          color: $gray2;
+          font-size: 1rem;
+        }
+
+        &:focus,
+        &:active {
+          border-color: $secondary;
+        }
+      }
+    }
+
+    .wpcf7-not-valid-tip {
+      font-size: 0.75rem;
+      text-transform: none;
+      margin-top: -0.5rem;
+      letter-spacing: 0.22px;
+    }
+  }
+
+  &-list-item {
+    margin: 0;
+    label {
+      text-transform: none;
+      color: $gray2;
+      letter-spacing: 0;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  input[type="submit"] {
+    @extend .btn-secondary;
+
+    &:disabled {
+      color: white;
+    }
+  }
+
+  input[type="checkbox"] {
+    position: relative;
+    visibility: hidden;
+    margin: 0;
+    margin-top: 3px;
+    width: 60px;
+    margin-right: 1.125rem;
+
+    & + span {
+      overflow: auto;
+      font-size: 0.75rem;
+
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        border-radius: 0;
+        height: 19px;
+        width: 19px;
+        top: 6px;
+        left: 0;
+        border: 1px solid $secondary;
+        background-color: $primary;
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.798' height='7.343' viewBox='0 0 14.798 10.343'%3E%3Cpath id='checkbox-icon' d='M7350.925,1093.425l4.808,4.808,9.283-9.282' transform='translate(-7350.571 -1088.597)' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E%0A");
+        top: 8px;
+        left: 4px;
+        visibility: hidden;
+      }
+    }
+
+    &:checked {
+      color: $secondary;
+      & + span {
+        &::before {
+          background-color: $primary;
+        }
+
+        &::after {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.contact-section {
+  padding: 150px 0;
+  background-color: $white;
+
+  &__subtitle {
+    margin-bottom: 36px;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #e2e2e2;
+
+    .item {
+      &__title {
+        margin-bottom: 23px;
+      }
+
+      &__value {
+        font-size: 1.25rem;
+      }
+
+      &__icon {
+        max-width: 30px;
+        max-height: 32px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}

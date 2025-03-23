@@ -1,0 +1,28 @@
+.steps-lay3 {
+  margin: 85px 0;
+
+  &__item {
+    height: auto;
+
+    .item {
+      &__wrapper {
+        height: 100%;
+        padding-top: 48px;
+        border-top: 1px solid #e2e2e2;
+      }
+
+      &__subtitle {
+        margin-bottom: 36px;
+        font-weight: 300;
+      }
+
+      &__title {
+        font-size: 1.125rem;
+
+        @include media-breakpoint-up(2xl) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
